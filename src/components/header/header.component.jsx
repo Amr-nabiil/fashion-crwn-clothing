@@ -9,21 +9,27 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 
-import { ReactComponent as Logo } from '../../assets/crown.svg';
+import { ReactComponent as Logo } from '../../assets/fin.svg';
 
 import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>
+    
     <Link className='logo-container' to='/'>
       <Logo className='logo' />
+     
     </Link>
+   <div className='name'>
+   <h2>Flair Spot Clothing</h2>
+   </div>
     <div className='options'>
+     
       <Link className='option' to='/shop'>
         SHOP
       </Link>
-      <Link className='option' to='/shop'>
-        CONTACT
+      <Link className='option' to='/about us'>
+        ABOUT US
       </Link>
       {currentUser ? (
         <div className='option' onClick={() => auth.signOut()}>

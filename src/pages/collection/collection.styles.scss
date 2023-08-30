@@ -22,3 +22,24 @@
       }
     }
   }
+
+   /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+  .collection-page .title {
+      font-size: 13px; /* Adjust font size for mobile */
+      margin: 0 auto 10px; /* Adjust margin for mobile */
+  }
+
+  .collection-page .items {
+    display: grid;
+    align-items: flex-start;
+      grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+      grid-gap: 8px; /* Adjust grid gap for mobile */
+      justify-content: space-between; /* Center align items on mobile */
+  }
+
+  .collection-page .collection-item {
+      width: 100%; /* Full width on mobile */
+      margin-bottom: 20px; /* Adjust margin for mobile */
+  }
+}

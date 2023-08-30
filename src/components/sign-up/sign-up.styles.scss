@@ -1,9 +1,25 @@
 .sign-up {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 780px;
+    margin-bottom: 15%;
   
     .title {
-      margin: 10px 0;
+      margin: 20px 0;
     }
   }
+
+  /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+  .sign-up {
+    align-items: start;
+    width: 90%; /* Make the section wider for mobile */
+    margin: 0 auto; /* Center-align the section for mobile */
+    padding: 20px; /* Add some padding for spacing */
+    
+    .title {
+      margin: 10px 0; /* Adjust the margin as needed for mobile */
+      font-size: 18px; /* Adjust the font size for mobile */
+    }
+  }
+}

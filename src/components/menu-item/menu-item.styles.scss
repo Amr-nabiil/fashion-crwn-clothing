@@ -40,11 +40,12 @@
       height: 100%;
       background-size: cover;
       background-position: center;
+      object-fit: cover;
     }
   
     .content {
       height: 90px;
-      padding: 0 25px;
+      padding: 0 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -64,5 +65,18 @@
         font-weight: lighter;
         font-size: 16px;
       }
+    }
+  }
+   
+  @media (max-width: 768px) {
+    .menu-item {
+      min-width: 55%; /* Adjust the width for mobile screens */
+      height: 200px; /* Adjust the height for mobile screens */
+      margin: 0 5px 10px; /* Adjust the margin for mobile screens */
+      border: 1px solid #ddd;
+    }
+    
+    .menu-item.large {
+      height: 300px; /* Adjust the height for large menu items on mobile screens */
     }
   }

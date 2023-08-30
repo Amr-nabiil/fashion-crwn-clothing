@@ -1,6 +1,16 @@
+/* Default styles for larger screens */
 .directory-menu {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* Media query for screens up to 768px wide (typical mobile screens) */
+@media (max-width: 768px) {
+  .directory-menu {
+    justify-content: center; /* Center items for mobile screens */
+    flex-wrap: wrap;
+  }
 }

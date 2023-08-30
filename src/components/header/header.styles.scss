@@ -1,26 +1,65 @@
 .header {
-  height: 70px;
-  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 25px;
+  padding: 10px 50px;
+  
+  top: 0;
+  left: 0;
 
   .logo-container {
     height: 100%;
     width: 70px;
-    padding: 25px;
+ 
+  }
+  .name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    height: 80px;
+    width: 80px;
+    padding-left: 10px ;
+    margin-right: auto;
+  }
+ 
+
   }
 
   .options {
-    width: 50%;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    
 
     .option {
-      padding: 10px 15px;
+      padding: 0px 20px;
       cursor: pointer;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Apply these styles for screens up to 768px wide (typical mobile screens) */
+    .header {
+    padding : 10px 30px;
+
+    .logo-container {
+      width: 10px;
+    }
+
+    .name {
+     display: none;
+    }
+
+    .options {
+      font-size: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .option {
+        padding: 0px 10px;
+       
+      }
     }
   }
 }

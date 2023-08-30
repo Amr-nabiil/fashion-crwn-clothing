@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 body {
   font-family: 'Open Sans';
   padding: 20px 40px;
@@ -10,4 +11,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Media query for screens up to 768px wide (typical mobile screens) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px 20px; /* Adjust padding for mobile screens */
+  }
 }

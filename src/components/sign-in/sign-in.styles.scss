@@ -1,14 +1,39 @@
 .sign-in {
-  width: 380px;
+  width: 780px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15%;
 
   .title {
-    margin: 10px 0;
+    margin: 20px 0;
   }
 
   .buttons {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+/* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+  .sign-in {
+    width: 90%; /* Make the section wider for mobile */
+    margin: 0 auto; /* Center-align the section for mobile */
+    padding: 20px; /* Add some padding for spacing */
+    
+    .title {
+      margin: 10px 0; /* Adjust the margin as needed for mobile */
+      font-size: 18px; /* Adjust the font size for mobile */
+    }
+
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically on mobile */
+      margin-top: 20px; /* Add space between buttons on mobile */
+      
+      /* Optionally, you can style each button separately for mobile */
+      .button {
+        margin-bottom: 10px; /* Adjust the margin between buttons for mobile */
+      }
+    }
   }
 }

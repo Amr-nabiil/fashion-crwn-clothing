@@ -1,0 +1,43 @@
+/* AboutSection.scss */
+#about-head {
+    display: flex;
+    align-items: center;
+  }
+  
+  #about-head img {
+    width: 50%;
+    height: auto;
+  }
+  
+  #about-head div {
+    padding-left: 40px;
+  }
+  
+  .section-p1 {
+    padding: 40px 80px;
+  }
+  
+
+  /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+    #about-head {
+      flex-direction: column; /* Stack content on top of each other for mobile */
+      align-items:start; /* Center align content for mobile */
+      text-align: start; /* Center align text for mobile */
+    }
+  
+    #about-head img {
+      width: 100%; /* Make the image full width for mobile */
+      height: 90%; /* Maintain the image's aspect ratio */
+      margin-bottom: 20px; /* Add spacing between image and text for mobile */
+    }
+  
+    #about-head div {
+      padding: 0; /* Remove left padding for mobile */
+    }
+  
+    .section-p1 {
+      padding: 20px; /* Adjust the padding for mobile */
+    }
+  }
+  

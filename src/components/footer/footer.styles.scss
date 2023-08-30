@@ -1,0 +1,93 @@
+/* footer.styles.scss */
+.section-p1{
+    padding: 40px 80px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+footer .logo{
+    margin: 0px 0px 10px 0px;
+}
+footer h3{
+    margin: 0px 0px 8px 0px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0px 0px 8px 0px;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+
+}
+footer .install .row img{
+    border: 1px solid #088178; 
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0px 15px 0px;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+    transform: scale(1.05);
+}
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+  
+@media (max-width: 768px) {
+    .section-p1 {
+        padding: 10px; /* Adjust the padding for mobile */
+    }
+
+    footer {
+        justify-self: start;
+        flex-direction: column; /* Stack columns on mobile */
+        align-items: start; /* Center align content on mobile */
+    }
+
+    footer .col {
+        text-align: center; /* Center align column content on mobile */
+    }
+
+    footer h4 {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+
+    footer p {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+
+    footer a {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+
+    footer .install img {
+        margin: 10px 0px; /* Adjust margin for mobile */
+    }
+}

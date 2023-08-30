@@ -2,3 +2,8 @@
     display: flex;
     flex-direction: column;
   }
+  @media (max-width: 768px) {
+    .collections-overview {
+      display: block; /* Stack items below each other on mobile */
+    }
+  }

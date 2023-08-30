@@ -19,3 +19,21 @@
       bottom: 12px;
     }
   }
+
+   /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+  .cart-icon {
+    width: 35px; /* Adjust width for mobile */
+    height: 35px; /* Adjust height for mobile */
+
+    .shopping-icon {
+      width: 20px; /* Adjust icon size for mobile */
+      height: 20px; /* Adjust icon size for mobile */
+    }
+
+    .item-count {
+      font-size: 8px; /* Adjust font size for mobile */
+      bottom: 8px; /* Adjust position for mobile */
+    }
+  }
+}

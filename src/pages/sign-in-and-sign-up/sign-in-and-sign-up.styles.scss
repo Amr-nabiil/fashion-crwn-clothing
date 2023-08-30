@@ -1,6 +1,19 @@
 .sign-in-and-sign-up {
-    width: 850px;
+    width: 950px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: start;
     margin: 30px auto;
+    margin-top: 5%;
   }
+  /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+  .sign-in-and-sign-up {
+    width: 90%; /* Make the section wider for mobile */
+    display: flex;
+    flex-direction: column; /* Stack the items vertically for mobile */
+    align-items: start; /* Center-align items for mobile */
+    margin: 20px auto; /* Adjust margin for mobile */
+  }
+}

@@ -40,3 +40,49 @@
       color: red;
     }
   }
+
+
+   /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+  .checkout-page {
+    width: 90%; /* Make the checkout page wider for mobile */
+    margin: 20px auto 0; /* Adjust margin for mobile */
+  }
+
+  .checkout-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    font-size: 10px;
+    flex-direction: row; /* Stack header blocks vertically for mobile */
+    align-items: center; /* Center-align header for mobile */
+    border-bottom: 1px solid darkgrey;
+    
+    .header-block {
+      text-transform: capitalize;
+      width: 100%; /* Make header blocks full width for mobile */
+
+      &:last-child {
+        width: 100%; /* Make the last header block full width for mobile */
+      }
+    }
+  }
+
+  .total {
+    margin-top: 20px; /* Adjust margin for mobile */
+    font-size: 13px; /* Adjust font size for mobile */
+  }
+
+  button {
+    margin-top: 30px; /* Adjust margin for mobile */
+  }
+
+  .test-warning {
+    
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px; /* Adjust margin for mobile */
+    font-size: 20px; /* Adjust font size for mobile */
+    color: red;
+  }
+}

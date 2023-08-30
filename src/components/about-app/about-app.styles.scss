@@ -1,0 +1,44 @@
+/* AboutApp.scss */
+#about-app {
+    text-align: center;
+  }
+  
+  #about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0px auto;
+  }
+  
+  #about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  
+  .section-p1 {
+    padding: 40px 80px; // Adjust the padding as needed
+  }
+  
+  /* Mobile styles - apply these for screens up to 768px wide */
+@media (max-width: 768px) {
+    #about-app {
+      text-align: center; /* Center-align text for mobile */
+    }
+  
+    #about-app .video {
+      width: 90%; /* Make the video container wider for mobile */
+      height: auto; /* Allow the height to adjust to the video's aspect ratio */
+      margin: 20px auto 0px auto; /* Adjust margin for mobile */
+    }
+  
+    #about-app .video video {
+      width: 100%; /* Make the video inside the container full width for mobile */
+      height: auto; /* Allow the height to adjust to the video's aspect ratio */
+      border-radius: 10px; /* Reduce the border radius for mobile */
+    }
+  
+    .section-p1 {
+      padding: 20px; /* Adjust the padding for mobile */
+    }
+  }
+  
